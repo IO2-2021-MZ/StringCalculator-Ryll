@@ -111,5 +111,15 @@ namespace StringCalculator.Test
             int output = calculator.Add(input);
             Assert.AreEqual(expected, output);
         }
+        [Test]
+        public void NewEasyTest()
+        {
+            Calculator calculator = new Calculator();
+            string input = "3";
+            int expected = 3;
+
+            int output = calculator.Add(input);
+            Assert.AreEqual(expected, output);
+        }
     }
 }
