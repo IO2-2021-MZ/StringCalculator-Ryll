@@ -9,7 +9,8 @@ namespace StringCalculator
         private static string[] separators = new string[]
         {
             ",",
-            "\n"
+            "\n",
+            ";"
         };
 
         public int Add(string input)
