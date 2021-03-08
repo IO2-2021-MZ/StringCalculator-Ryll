@@ -121,16 +121,5 @@ namespace StringCalculator.Test
             int output = calculator.Add(input);
             Assert.AreEqual(expected, output);
         }
-
-        [Test]
-        public void FailingTest()
-        {
-            Calculator calculator = new Calculator();
-            string input = "///////////////1";
-            int expected = 1;
-
-            int output = calculator.Add(input);
-            Assert.AreEqual(expected, output);
-        }
     }
 }
