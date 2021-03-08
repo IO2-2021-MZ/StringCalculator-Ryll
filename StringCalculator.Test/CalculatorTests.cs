@@ -127,7 +127,7 @@ namespace StringCalculator.Test
         {
             Calculator calculator = new Calculator();
             string input = "///////////////1";
-            int expected = 1;
+            int expected = 0;
 
             int output = calculator.Add(input);
             Assert.AreEqual(expected, output);
