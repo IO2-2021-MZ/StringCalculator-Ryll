@@ -47,6 +47,8 @@ namespace StringCalculator
 
             string[] values = validInput.Split(usedSeparators, StringSplitOptions.None);
             bool isParsed = int.TryParse(values[0], out int firstValue);
+            if (!isParsed)
+                return 0;
             int value = firstValue > 1000 ? 0 : firstValue;
             if (value < 0) throw new Exception();
             for (int i = 1; i < values.Length; i++)
