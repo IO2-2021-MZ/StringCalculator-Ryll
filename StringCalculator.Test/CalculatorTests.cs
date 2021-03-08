@@ -56,6 +56,7 @@ namespace StringCalculator.Test
         [Test]
         public void ThreeNumbersReturnSum()
         {
+            //version 1.0 comment
             Calculator calculator = new Calculator();
             string input = "2\n9,3";
             int expected = 14;
